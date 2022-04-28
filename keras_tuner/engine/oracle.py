@@ -107,7 +107,7 @@ class Oracle(stateful.Stateful):
         self._tried_so_far = set()
         # Maximum number of identical values that can be generated
         # before we consider the space to be exhausted.
-        self._max_collisions = 5
+        self._max_collisions = 1000
 
         # Set in `BaseTuner` via `set_project_dir`.
         self.directory = None
